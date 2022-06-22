@@ -11,12 +11,13 @@
 }
 
 .cabecalho {
-    background: green;
+    align-items: center;
+    padding: 0 2rem;
+    display: flex;
     grid-area: cabecalho;
 }
  
-.conteudo {
-    
+.conteudo {    
     grid-area: conteudo;
 }
 
