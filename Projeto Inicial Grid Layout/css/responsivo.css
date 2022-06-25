@@ -1,8 +1,7 @@
 /*Celulares*/
 @media screen and (min-width: 0) {
     .destaques__principal, .destaques__categorias {
-        grid-column: 1/5;
-        
+        grid-column: 1/5;        
     }
 
     .destaques__secundario:nth-child(2) {
@@ -24,6 +23,17 @@
         display: none;
         grid-column: none;
         grid-row: none;
+    }
+
+    .populares__conteudo {
+        flex-direction: column;
+    }
+
+    .populares__card {
+        grid-template-rows: 150px auto;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 3rem;
     }
     
 }
@@ -59,14 +69,30 @@
     .destaques__categorias {
         grid-column: 1/3;
     }
+
+    .populares__conteudo {
+        flex-direction: row;
+    }
+
+    .populares__card {
+        grid-template-rows: 173px auto;
+        margin-right: 1rem;
+        margin-bottom: 3rem;
+        width: calc(50% - 1rem);
+    }
 }
 
 /*Desktops antigos*/
 @media screen and (min-width: 992px) {
-
+    .populares__card {
+        width: calc(33.33% - 1rem);
+    }
 }
 
 /*Desktops novos e Tv´s*/
 @media screen and (min-width: 1200px) {
-    
+    .populares__card {
+        margin-bottom: 0;
+        width: calc(20% - 1rem);
+    }
 }
